@@ -13,8 +13,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Created
-        */
+ * 在对消息处理的过程中，我们期望多线程并行执行来增加效率，因此对consumer做了一个线程池的封装。
+ */
 @Data
 public class ThreadPoolConsumer<T> {
     private static final Logger logger = LoggerFactory.getLogger(ThreadPoolConsumer.class);
